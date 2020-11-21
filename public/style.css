@@ -5,15 +5,23 @@
 
 #service1 {
   grid-column-start: 0;
-  background-color: aquamarine;
   margin-right: 50px;
-
+  float: left;
 }
 #service2 {
-  float: right;
-  grid-column-start: 1;
+  margin: 0 auto;
+  grid-column-start: 2;
   justify-self: start;
-  background-color: red;
   grid-template-columns: 2fr 1fr;
   justify-content: right;
+}
+
+#service3 {
+  display: grid;
+  margin: 0 auto;
+  float: left;
+}
+#service4 {
+  width: 90%;
+  margin: 0 auto;
 }
