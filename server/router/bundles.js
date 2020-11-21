@@ -5,6 +5,7 @@ const {
 } = require('../config/services.js');
 
 const router = Router();
+const cors = require('cors');
 
 router.use('/service1.js', createProxyMiddleware({
   target: service1.url,
@@ -22,20 +23,20 @@ router.use('/service2.js', createProxyMiddleware({
   changeOrigin: true,
 }));
 
-router.use('/service3.js', createProxyMiddleware({
-  target: service3.url,
-  pathRewrite: {
-    '^/bundles/service3.js': service3.bundle,
-  },
-  changeOrigin: true,
-}));
+// router.use('/service3.js', createProxyMiddleware({
+//   target: service3.url,
+//   pathRewrite: {
+//     '^/bundles/service3.js': service3.bundle,
+//   },
+//   changeOrigin: true,
+// }));
 
-router.use('/service4.js', createProxyMiddleware({
-  target: service4.url,
-  pathRewrite: {
-    '^/bundles/service4.js': service4.bundle,
-  },
-  changeOrigin: true,
-}));
+// router.use('/service4.js', createProxyMiddleware({
+//   target: service4.url,
+//   pathRewrite: {
+//     '^/bundles/service4.js': service4.bundle,
+//   },
+//   changeOrigin: true,
+// }));
 
 module.exports = router;
