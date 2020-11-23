@@ -42,23 +42,23 @@
 
 module.exports = {
   service1: {
-    api: 'FIX_ME',
+    api: ['/items/', '/photos'],
     url: 'http://localhost:3001',
-    bundle: 'app.js',
+    bundle: 'bundle.js',
   },
   service2: {
-    api: 'FIX_ME',
+    api: ['/values', '/styles'],
     url: 'http://localhost:3002',
-    bundle: 'app.js',
+    bundle: 'bundle.js',
   },
   service3: {
-    api: 'FIX_ME',
+    api: ['/related','/getrelatedpurchases', '/getdetails', '/getratingavg', '/getratingcount', '/related/getrelatedpurchases', '/related/getdetails'],
     url: 'http://localhost:3003',
-    bundle: 'app.js',
+    bundle: 'bundle.js'
   },
   service4: {
-    api: 'FIX_ME',
+    api:  ['/:endpoint', '/guitar/reviews'],
     url: 'http://localhost:3004',
-    bundle: 'app.js',
+    bundle: 'bundle.js',
   },
 };

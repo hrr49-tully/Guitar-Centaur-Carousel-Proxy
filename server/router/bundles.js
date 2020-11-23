@@ -5,6 +5,7 @@ const {
 } = require('../config/services.js');
 
 const router = Router();
+const cors = require('cors');
 
 router.use('/service1.js', createProxyMiddleware({
   target: service1.url,
