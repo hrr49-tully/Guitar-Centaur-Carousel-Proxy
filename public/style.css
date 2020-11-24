@@ -1,37 +1,80 @@
-#main div {
+body {
+  max-width: 100%;
+  margin: 20px auto;
+}
+
+#wrapper {
   display: grid;
-  grid-template-columns: 1fr 2fr;
-  column-gap: 100px;
-  row-gap: 100px;
-  margin: 0 auto;
+  column-gap: 1em;
+  row-gap: 1em;
+  margin: 20px  auto;
 }
 
 #service1 {
+  max-width: 600px;
   grid-column-start: 1;
-  margin-right: 100px;
-  width: 100%;
+  grid-column-end: 3;
 }
 
-#service2 {
-  position: relative;
-  display: grid;
-  justify-self: left;
-  left: 50px;
-  margin: 0 auto;
-  margin-top: 30px;
-  column-gap: 100px;
-  row-gap: 100px;
+#ATC {
+  align-self: start;
+  padding-top: 12em;
+  grid-column-start: 3;
+  grid-column-end: 4;
 }
+
+#ATC > div > div:nth-child(1) {
+  min-width: 300px;
+}
+
+#ATC > div > div:nth-child(2) {
+  min-width: 300px;
+  margin-left: 1em;
+}
+
 
 #service3 {
-  width: 80%;
-  display: grid;
-  margin: 0 auto;
-  float: left;
+  max-width: 90%;
+  margin 10px auto;
+  margin-left: 30px;
+  grid-column-start: 1;
+  grid-column-end: 4;
 }
+
 #service4 {
-  width: 80%;
-  margin: 0 auto;
-  float: left;
-  justify-content: left;
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+
+@media only screen and (max-width: 600px) {
+  #service1 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+
+  #ATC {
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+
+  #ATC > div > div {
+    min-width: 100%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  body {
+    width: 100%;
+    margin: auto;
+  }
+
+  #ATC > div > div:nth-child(2) {
+    width: 100%;
+    float: none;
+  }
+
+  #service3, #service1, #service3, #service4, #service3 h3, #ATC > div > div, #ATC > div {
+    display: block;
+    width: 80%;
+  }
 }

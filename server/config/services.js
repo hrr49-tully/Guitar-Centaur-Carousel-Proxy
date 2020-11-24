@@ -35,7 +35,7 @@
 
   {
     api: /listings/:listing_id/reviews,
-    url: 'http://localhost:3004',
+    url: 'http:west-2.com:3000/',
     bundle: 'bundle.js',
   }
 */
@@ -43,17 +43,17 @@
 module.exports = {
   service1: {
     api: ['/items/', '/photos'],
-    url: 'http://localhost:3001',
+    url: 'http://54.214.116.240:3000/',
     bundle: 'bundle.js',
   },
   service2: {
     api: ['/values', '/styles'],
-    url: 'http://localhost:3002',
+    url: 'http://107.22.130.204:3003/',
     bundle: 'bundle.js',
   },
   service3: {
     api: ['/related','/getrelatedpurchases', '/getdetails', '/getratingavg', '/getratingcount', '/related/getrelatedpurchases', '/related/getdetails'],
-    url: 'http://localhost:3003',
+    url: 'http://18.219.22.8:3003/',
     bundle: 'bundle.js'
   },
   service4: {
