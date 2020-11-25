@@ -14,4 +14,8 @@ app.use('/bundles', router.bundles);
 // Handling AJAX requests to the API by passing off requests to the api router
 app.use('/api', router.api);
 
+app.get('/:item_id', (req, res) => {
+  res.sendFile(`${PUBLIC_DIR}/index.html`);
+});
+
 module.exports = app;
