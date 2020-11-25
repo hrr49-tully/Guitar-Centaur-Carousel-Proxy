@@ -17,11 +17,11 @@ a:active {
   display: grid;
   column-gap: 1em;
   row-gap: 1em;
-  margin: 0 50px;
+  margin: 0 20px;
 }
 
 #service1 {
-  max-width: 600px;
+  max-width: 530px;
   grid-column-start: 1;
   grid-column-end: 3;
   margin-left: 0;
@@ -38,12 +38,13 @@ a:active {
 }
 
 #ATC > div > div:nth-child(1) {
-  min-width: 300px;
+  min-width: 550px;
+  width: 100%;
 }
 
 #ATC > div > div:nth-child(2) {
   min-width: 300px;
-  margin-left: 70px;
+  margin-left: 10px;
 }
 
 
